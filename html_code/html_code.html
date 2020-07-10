@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <style>
+        .pictures{
+            display: grid;
+            height: 100px;
+            width: 100px;
+            border: black;
+        }
+        .hero-image {
+            display: grid;
+            height: 100%;
+        }
+        .hero {
+            max-width: 100%;
+            max-height: 100vh;
+            margin: auto;
+        }
+        .content {
+        position: relative;
+        text-align: left;
+        width: 1100px;
+        top: 50px;
+        font-size: 18px;
+        margin: 0 auto;
+        }
+        .contentHead{
+        position: relative;
+        text-align: left;
+        width: 1100px;
+        top: 50px;
+        font-size: 28px;
+        margin: 0 auto;
+            
+        }
+        .contentCategories {
+        position: relative;
+        text-align: left;
+        width: 1100px;
+        top: 50px;
+        font-size: 18px;
+        margin: 0 auto;
+        }
+        figcaption {
+        background-color: black;
+        color: white;
+        font-style: italic;
+        padding: 2px;
+        text-align: center;
+        width: 180px;
+        margin-right: 2px;
+        }
+        figure {
+        display: inline-block;
+        margin-block-start: 1em;
+        margin-block-end: 1em;
+        margin-inline-start: 10px;
+        margin-inline-end: 10px;
+        }
+        </style>
+    </head>
+    <body style="
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;">
+        <header>
+        <div class="hero-image">
+            <img class="hero" src="../pics/windsor_banner.png">
+        </div>
+        </header>
+        <div class="contentHead">
+            <b>
+                Open Data Catalogue
+            </b>
+        </div>
+        <div class="content">
+            <p>
+                Citizens are encouraged to use or repurpose the City of Windsor's open data for research purposes or to improve 
+                their interaction with municipal services and facilities. Members of the community can use the raw data provided 
+                here to create and share resources from maps to applications and more.
+
+                Please be aware that by downloading or accessing this data, you agree to be bound by the City of Windsor's Open Data Terms of Use.
+            </p>
+        </div>
+        
+        <div class="contentHead">
+            <b>
+                Using Open Data
+            </b>
+        </div>
+        <div class="content">
+            <p>
+                KMZ files can be imported to Google Maps, Google Earth or Bing Maps. Download the instructions.
+                Are you looking for JSON? Try our new swagger implementation https://opendata.citywindsor.ca/swagger
+            </p>
+        </div>
+        
+        <div class="contentHead">
+            <b>
+                How can we improve the catalogue?
+            </b>
+        </div>
+        <div class="content">
+            <p>
+                Email us your suggestions, ideas, or questions.
+            </p>
+        </div>
+        <div class="content">
+        <p>
+        <b> Filter by resorce type: &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Search: </b>
+        </p>
+        
+        <select name="type" id="type" style="width: 480px;">
+        <option value="All">All</option>
+        <option value="CSV">CSV</option>
+        <option value="DWG">DWG</option>
+        <option value="KMZ">KMZ</option>
+        <option value="SHPLL84">SHPLL84</option>
+        <option value="SHPUTM">SHPUTM</option>
+        <option value="XLS">XLS</option>
+        <option value="XLSX">XLSX</option>
+        </select>
+        <input type="text" style="width: 500px;" placeholder="Search..">
+        </div>
+        <div class="contentCategories">
+            <figure>
+            <img src="../pics/firetruck.jpg" width="180" height="180">
+            <figcaption>Emergency Services</figcaption>
+            </figure>
+            <figure>
+            <img src="../pics/vehicle.png" width="180" height="180">
+            <figcaption>Vehicle/Parking/Traffic</figcaption>
+            </figure>
+            <figure>
+            <img src="../pics/census.jpg" width="180" height="180">
+            <figcaption>Census/Elections</figcaption>
+            </figure>
+        </div>
+        
+    </body>
+    
+</html>
