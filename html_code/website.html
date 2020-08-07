@@ -1,47 +1,8 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="../css/website.css">
         <style>
-        .pictures{
-            display: grid;
-            height: 100px;
-            width: 100px;
-            border: black;
-        }
-        .hero-image {
-            display: grid;
-            height: 100%;
-        }
-        .hero {
-            max-width: 100%;
-            max-height: 100vh;
-            margin: auto;
-        }
-        .content {
-        position: relative;
-        text-align: left;
-        width: 1100px;
-        top: 50px;
-        font-size: 18px;
-        margin: 0 auto;
-        }
-        .contentHead{
-        position: relative;
-        text-align: left;
-        width: 1100px;
-        top: 50px;
-        font-size: 28px;
-        margin: 0 auto;
-            
-        }
-        .contentCategories {
-        position: relative;
-        text-align: left;
-        width: 1100px;
-        top: 50px;
-        font-size: 18px;
-        margin: 0 auto;
-        }
         figcaption {
         background-color: black;
         color: white;
@@ -58,7 +19,7 @@
         margin-inline-start: 10px;
         margin-inline-end: 10px;
         }
-        </style>
+    </style>
     </head>
     <body style="
     margin-top: 0px;
@@ -124,19 +85,51 @@
         </select>
         <input type="text" style="width: 500px;" placeholder="Search..">
         </div>
-        <div class="contentCategories">
+        <div class="contentCategories" style="display: flex;">
+            <form action="emergency_services.php">
             <figure>
-            <img src="../pics/firetruck.jpg" width="180" height="180">
+            <input type="image" src="../pics/firetruck.jpg" width="180" height="180">
             <figcaption>Emergency Services</figcaption>
             </figure>
+            </form>
+            <form action="vehicle_parking_traffic.php">
             <figure>
-            <img src="../pics/vehicle.png" width="180" height="180">
+            <input type="image" src="../pics/vehicle.png" width="180" height="180">
             <figcaption>Vehicle/Parking/Traffic</figcaption>
             </figure>
+            </form>
+            <form action ="census.php">
             <figure>
-            <img src="../pics/census.jpg" width="180" height="180">
+            <input type="image" src="../pics/census.jpg" width="180" height="180">
             <figcaption>Census/Elections</figcaption>
             </figure>
+            </form>
+            <form action ="building.php">
+            <figure>
+            <input type="image" src="../pics/building.png" width="180" height="180">
+            <figcaption>Building/Construction</figcaption>
+            </figure>
+            </form>
+             <form action ="land.php">
+            <figure>
+            <input type="image" src="../pics/land.png" width="180" height="180">
+            <figcaption>Parks/Land/Boundaries</figcaption>
+            </figure>
+            </form>
+            </div>
+            <div class="contentCategories" style="display: flex;">
+             <form action ="public.php">
+            <figure>
+            <input type="image" src="../pics/public.png" width="180" height="180">
+            <figcaption>Public Services/Transit</figcaption>
+            </figure>
+            </form>
+             <form action ="miscellaneous.php">
+            <figure>
+            <input type="image" src="../pics/other.png" width="180" height="180">
+            <figcaption>Miscellaneous</figcaption>
+            </figure>
+            </form>
         </div>
         
     </body>
